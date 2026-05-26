@@ -123,12 +123,30 @@ button, .boton-recurso, .sesion-button, .accord-button {
     aspect-ratio: 16 / 9;
 }
 
+.resource-embed {
+    background: #f8fbff;
+    padding: 0.5rem;
+    border-radius: 14px;
+    border: 1px solid #d9e2f3;
+    box-sizing: border-box;
+    margin: 1.2rem 0;
+}
+
+.resource-embed iframe {
+    width: 100%;
+    border: none;
+    border-radius: 12px;
+    display: block;
+    background: #ffffff;
+}
+
 .intro-avatar iframe {
     width: 100%;
     height: 100%;
     border: none;
     border-radius: 12px;
     display: block;
+    background: #ffffff;
 }
 
 .mermaid {
