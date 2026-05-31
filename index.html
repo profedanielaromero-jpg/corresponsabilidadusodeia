@@ -24,17 +24,141 @@
         <ul class="menu">
             <li><a class="btn btn1" href="#introduccion">Introducción</a></li>
             <li><a class="btn btn2" href="#contexto">Contexto</a></li>
-            <li><a class="btn btn3" href="#fundamentos">Fundamentos</a></li>
-            <li><a class="btn btn4" href="#metodologia">Metodología</a></li>
-            <li><a class="btn btn5" href="#recursos">Recursos</a></li>
-            <li><a class="btn btn6" href="#actividades">Escuela de Padres</a></li>
-            <li><a class="btn btn7" href="#referencias">Referencias</a></li>
-            <li><a class="btn btn8" href="#contacto">Contacto</a></li>
-            <li><a class="btn btn9" href="#ia-asistentes">Declaración de uso de IA</a></li>
+            <li><a class="btn btn3" href="#objetivos">Objetivos</a></li>
+            <li><a class="btn btn4" href="#metas">Metas</a></li>
+            <li><a class="btn btn5" href="#fundamentos">Fundamentos</a></li>
+            <li><a class="btn btn6" href="#metodologia">Metodología</a></li>
+            <li><a class="btn btn7" href="#recursos">Recursos</a></li>
+            <li><a class="btn btn8" href="#actividades">Escuela de Padres</a></li>
+            <li><a class="btn btn9" href="#evaluacion del proyecto">Evaluacion del proyecto</a></li>
+            <li><a class="btn btn10" href="#referencias">Referencias</a></li>
+            <li><a class="btn btn11" href="#contacto">Contacto</a></li>
+            <li><a class="btn btn12" href="#ia-asistentes">Declaración de uso de IA</a></li>
         </ul>
     </nav>
 </header>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>Menú Flotante</title>
+
+<!-- Font Awesome -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+
+html{
+    scroll-behavior:smooth;
+}
+
+/* BOTÓN PRINCIPAL */
+.floating-menu{
+    position:fixed;
+    bottom:25px;
+    right:25px;
+    z-index:9999;
+}
+
+.main-button{
+    width:65px;
+    height:65px;
+    border-radius:50%;
+    background:#075eff;
+    color:white;
+    border:none;
+    cursor:pointer;
+    font-size:28px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
+    transition:0.3s;
+}
+
+.main-button:hover{
+    transform:scale(1.1);
+    background:#348df3;
+}
+
+/* ITEMS */
+.menu-items{
+    position:absolute;
+    bottom:80px;
+    right:0;
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+    opacity:0;
+    visibility:hidden;
+    transform:translateY(20px);
+    transition:0.3s;
+}
+
+.floating-menu.active .menu-items{
+    opacity:1;
+    visibility:visible;
+    transform:translateY(0);
+}
+
+/* BOTONES CIRCULARES */
+.menu-items a{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+    text-decoration:none;
+    font-size:20px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.25);
+    transition:0.3s;
+    position:relative;
+}
+
+/* TOOLTIP */
+.menu-items a span{
+    position:absolute;
+    right:70px;
+    background:#111827;
+    color:white;
+    padding:6px 10px;
+    border-radius:8px;
+    white-space:nowrap;
+    font-size:14px;
+    opacity:0;
+    transition:0.3s;
+    pointer-events:none;
+}
+
+.menu-items a:hover span{
+    opacity:1;
+}
+
+/* EFECTO */
+.menu-items a:hover{
+    transform:scale(1.1);
+}
+
+/* COLORES INDIVIDUALES */
+.btn1{background:#ef4444;}
+.btn2{background:#f97316;}
+.btn3{background:#eab308;}
+.btn4{background:#22c55e;}
+.btn5{background:#06b6d4;}
+.btn6{background:#3b82f6;}
+.btn7{background:#8b5cf6;}
+.btn8{background:#ec4899;}
+.btn9{background:#91804a;}
+.btn10{background:#994372;}
+.btn11{background:#90ac46;}
+.btn12{background:#43b4a5;}
+
+</style>
+</head>
+</body>
+</html>
 <style>
     body{
         font-family: Arial, sans-serif;
@@ -107,7 +231,7 @@
         <section id="introduccion">
             <h2>Introducción</h2>
             <p>La inteligencia artificial (IA) es una herramienta poderosa que puede transformar la educación. Sin embargo, es crucial promover su uso ético para proteger la privacidad, fomentar la equidad y desarrollar habilidades críticas en los estudiantes.</p>
-            <p>Este portafolio está diseñado para ser orientado por docentes en reuniones para padres de familia, ofreciendo recursos y actividades para sensibilizar sobre el uso responsable de la IA en el hogar y la escuela.</p>
+            <p><strong>Este portafolio está diseñado para ser orientado por docentes en reuniones para padres de familia, ofreciendo recursos y actividades para sensibilizar sobre el uso responsable de la IA en el hogar y la escuela.</strong></p>
 
             <div class="intro-avatar" style="margin: 1rem 0; text-align: center;">
                 <iframe width="560" height="315" src="https://app.heygen.com/embeds/e0f4529cc28c487ea34e3c142fea304b" title="Avatar IV Video" frameborder="0" allow="encrypted-media; fullscreen;" allowfullscreen></iframe>
@@ -121,8 +245,8 @@
         </section>
 
         <section id="contexto">
-            <h2>Contexto: A Quién Va Dirigido Este Proyecto</h2>
-            <p>Este proyecto está diseñado específicamente para <strong>acudientes, cuidadores y padres de familia</strong> de instituciones educativas públicas que atienden poblaciones en condiciones socioeconómicas vulnerables.</p>
+            <h2>Contexto y justificación</h2>
+            <p>Este proyecto está diseñado específicamente para <strong>acudientes, cuidadores y padres de familia</strong> de instituciones educativas públicas.</p>
             
             <h3>📍 Descripción de la Población Objetivo</h3>
             <div class="contexto-info">
