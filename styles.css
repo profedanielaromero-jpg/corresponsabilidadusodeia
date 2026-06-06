@@ -921,6 +921,26 @@ footer {
     margin-bottom: 1rem;
 }
 
+.objective-box {
+    background: linear-gradient(135deg, #eff6ff 0%, #eef2ff 100%);
+    border-left: 5px solid #2563eb;
+    border-radius: 10px;
+    padding: 1rem 1.1rem;
+    margin: 1rem 0 1.2rem;
+    box-shadow: 0 10px 18px rgba(37, 99, 235, 0.12);
+}
+
+.objective-box h3 {
+    margin-top: 0;
+    margin-bottom: 0.35rem;
+    color: #1e3a8a;
+}
+
+.objective-box p {
+    margin: 0;
+    color: #1f2937;
+}
+
 /* Menú flotante de temas */
 .floating-theme-menu {
     position: fixed;
