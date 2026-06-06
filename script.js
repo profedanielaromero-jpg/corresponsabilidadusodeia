@@ -79,6 +79,27 @@ function toggleChatPanel() {
 document.addEventListener('DOMContentLoaded', function() {
     mermaid.initialize({ startOnLoad: true });
 
+    const floatingMenu = document.getElementById('floating-theme-menu');
+    const floatingMainBtn = document.getElementById('floating-main-btn');
+
+    if (floatingMenu && floatingMainBtn) {
+        floatingMainBtn.addEventListener('click', function () {
+            floatingMenu.classList.toggle('open');
+        });
+
+        floatingMenu.querySelectorAll('.bubble').forEach(function (link) {
+            link.addEventListener('click', function () {
+                floatingMenu.classList.remove('open');
+            });
+        });
+
+        document.addEventListener('click', function (event) {
+            if (!floatingMenu.contains(event.target) && !floatingMainBtn.contains(event.target)) {
+                floatingMenu.classList.remove('open');
+            }
+        });
+    }
+
     const chatToggle = document.getElementById('chatbot-toggle');
     const chatClose = document.getElementById('chatbot-close');
     const chatPanel = document.getElementById('chatbot-panel');

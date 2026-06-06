@@ -8,221 +8,29 @@
     <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
 </head>
 <body>
-    <header>
-      <header>
-    <div class="header-title-section">
-        <h1>Sensibilización Ética de la IA en Entornos Escolares</h1>
-        <h2 class="subtitle">
-            Portafolio de proyecto educativo - Integración De IA En Educación
-        </h2>
-        <h3 class="subtitle-secondary">
-            Escuela de padres: Corresponsabilidad acerca del uso de la IA - Colegio Nuevo Chile IED
-        </h3>
-    </div>
+    <header class="site-header">
+        <div class="header-title-section">
+            <p class="eyebrow">Portafolio de sensibilización ética</p>
+            <h1>Sensibilización Ética de la IA en Entornos Escolares</h1>
+            <h2 class="subtitle">Proyecto educativo para padres, docentes y comunidad académica</h2>
+            <h3 class="subtitle-secondary">Escuela de padres: corresponsabilidad frente al uso de la IA — Colegio Nuevo Chile IED</h3>
+        </div>
 
-    <nav>
-        <ul class="menu">
-            <li><a class="btn btn1" href="#introduccion">Introducción</a></li>
-            <li><a class="btn btn2" href="#contexto">Contexto</a></li>
-            <li><a class="btn btn3" href="#objetivos">Objetivos</a></li>
-            <li><a class="btn btn5" href="#fundamentos">Fundamentos</a></li>
-            <li><a class="btn btn6" href="#metodologia">Metodología</a></li>
-            <li><a class="btn btn7" href="#recursos">Recursos</a></li>
-            <li><a class="btn btn8" href="#actividades">Escuela de Padres</a></li>
-            <li><a class="btn btn9" href="#evaluacion del proyecto">Evaluacion del proyecto</a></li>
-            <li><a class="btn btn10" href="#referencias">Referencias</a></li>
-            <li><a class="btn btn11" href="#contacto">Contacto</a></li>
-            <li><a class="btn btn12" href="#ia-asistentes">Declaración de uso de IA</a></li>
-        </ul>
-    </nav>
-</header>
-<!DOCTYPE html>
-<html lang="es">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Menú Flotante</title>
-
-<!-- Font Awesome -->
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-<style>
-
-html{
-    scroll-behavior:smooth;
-}
-
-/* BOTÓN PRINCIPAL */
-.floating-menu{
-    position:fixed;
-    bottom:25px;
-    right:25px;
-    z-index:9999;
-}
-
-.main-button{
-    width:65px;
-    height:65px;
-    border-radius:50%;
-    background:#075eff;
-    color:white;
-    border:none;
-    cursor:pointer;
-    font-size:28px;
-    box-shadow:0 5px 15px rgba(0,0,0,0.3);
-    transition:0.3s;
-}
-
-.main-button:hover{
-    transform:scale(1.1);
-    background:#348df3;
-}
-
-/* ITEMS */
-.menu-items{
-    position:absolute;
-    bottom:80px;
-    right:0;
-    display:flex;
-    flex-direction:column;
-    gap:12px;
-    opacity:0;
-    visibility:hidden;
-    transform:translateY(20px);
-    transition:0.3s;
-}
-
-.floating-menu.active .menu-items{
-    opacity:1;
-    visibility:visible;
-    transform:translateY(0);
-}
-
-/* BOTONES CIRCULARES */
-.menu-items a{
-    width:55px;
-    height:55px;
-    border-radius:50%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    color:white;
-    text-decoration:none;
-    font-size:20px;
-    box-shadow:0 4px 10px rgba(0,0,0,0.25);
-    transition:0.3s;
-    position:relative;
-}
-
-/* TOOLTIP */
-.menu-items a span{
-    position:absolute;
-    right:70px;
-    background:#111827;
-    color:white;
-    padding:6px 10px;
-    border-radius:8px;
-    white-space:nowrap;
-    font-size:14px;
-    opacity:0;
-    transition:0.3s;
-    pointer-events:none;
-}
-
-.menu-items a:hover span{
-    opacity:1;
-}
-
-/* EFECTO */
-.menu-items a:hover{
-    transform:scale(1.1);
-}
-
-/* COLORES INDIVIDUALES */
-.btn1{background:#ef4444;}
-.btn2{background:#f97316;}
-.btn3{background:#eab308;}
-.btn5{background:#06b6d4;}
-.btn6{background:#3b82f6;}
-.btn7{background:#8b5cf6;}
-.btn8{background:#ec4899;}
-.btn9{background:#91804a;}
-.btn10{background:#994372;}
-.btn11{background:#90ac46;}
-.btn12{background:#43b4a5;}
-
-</style>
-</head>
-</body>
-</html>
-<style>
-    body{
-        font-family: Arial, sans-serif;
-        margin:0;
-        padding:0;
-        background:#f4f4f4;
-    }
-
-    header{
-        background: linear-gradient(135deg, #0f172a, #1e3a8a);
-        color:white;
-        padding:30px;
-        text-align:center;
-    }
-
-    .subtitle{
-        color:#dbeafe;
-    }
-
-    .subtitle-secondary{
-        color:#bfdbfe;
-        font-weight: normal;
-    }
-
-    .menu{
-        list-style:none;
-        padding:0;
-        margin-top:25px;
-        display:flex;
-        flex-wrap:wrap;
-        justify-content:center;
-        gap:12px;
-    }
-
-    .menu li{
-        display:inline-block;
-    }
-
-    .btn{
-        text-decoration:none;
-        color:white;
-        padding:12px 18px;
-        border-radius:12px;
-        font-weight:bold;
-        display:inline-block;
-        transition:0.3s ease;
-        box-shadow:0 4px 8px rgba(0,0,0,0.2);
-    }
-
-    .btn:hover{
-        transform:translateY(-3px);
-        opacity:0.9;
-    }
-
-    /* Colores diferentes */
-    .btn1{ background:#e63946; }
-    .btn2{ background:#ff7f11; }
-    .btn3{ background:#ffb703; color:black; }
-    .btn4{ background:#2a9d8f; }
-    .btn5{ background:#3a86ff; }
-    .btn6{ background:#8338ec; }
-    .btn7{ background:#ff006e; }
-    .btn8{ background:#06d6a0; color:black; }
-    .btn9{ background:#6c757d; }
-
-</style>
+        <nav aria-label="Navegación principal">
+            <ul class="menu">
+                <li><a class="btn btn1" href="#introduccion">Introducción</a></li>
+                <li><a class="btn btn2" href="#contexto">Contexto</a></li>
+                <li><a class="btn btn3" href="#diagnostico">Diagnóstico</a></li>
+                <li><a class="btn btn4" href="#fundamentos">Fundamentos</a></li>
+                <li><a class="btn btn5" href="#metodologia">Metodología</a></li>
+                <li><a class="btn btn6" href="#recursos">Recursos</a></li>
+                <li><a class="btn btn7" href="#actividades">Escuela de Padres</a></li>
+                <li><a class="btn btn8" href="#evaluacion">Evaluación</a></li>
+                <li><a class="btn btn9" href="#referencias">Referencias</a></li>
+                <li><a class="btn btn10" href="#contacto">Contacto</a></li>
+                <li><a class="btn btn11" href="#ia-asistentes">Declaración de IA</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
@@ -996,7 +804,7 @@ A continuación se presenta la justificación del proyecto, donde se describe la
  
             </div>
 
-            <div class="evaluacion-section">
+            <div class="evaluacion-section" id="evaluacion">
                 <h3>📊 Estrategias de Evaluación y Cierre</h3>
                 <div class="evaluacion-box">
                     <p>En lugar de una evaluación sumativa tradicional, el éxito de este micro currículo se mide a través de:</p>
@@ -1090,6 +898,23 @@ Este documento detalla dos instrumentos de evaluación complementarios para el p
             <p>💧-Usar la tecnología con propósito pedagógico real: no utilizar IA solo porque “se debe usar”, sino cuando aporte algo significativo al aprendizaje.</p>
         </section>
     </main>
+
+    <div class="floating-theme-menu" id="floating-theme-menu" aria-label="Temas del portafolio">
+        <button class="floating-main-btn" id="floating-main-btn" type="button" aria-label="Abrir menú de temas">🧭</button>
+        <nav class="floating-bubbles" id="floating-bubbles">
+            <a href="#introduccion" class="bubble bubble-intro" title="Introducción">📘<span>Introducción</span></a>
+            <a href="#contexto" class="bubble bubble-context" title="Contexto">📍<span>Contexto</span></a>
+            <a href="#diagnostico" class="bubble bubble-diagnosis" title="Diagnóstico">🔎<span>Diagnóstico</span></a>
+            <a href="#fundamentos" class="bubble bubble-fundaments" title="Fundamentos">🧠<span>Fundamentos</span></a>
+            <a href="#metodologia" class="bubble bubble-method" title="Metodología">🛠️<span>Metodología</span></a>
+            <a href="#recursos" class="bubble bubble-resources" title="Recursos">📚<span>Recursos</span></a>
+            <a href="#actividades" class="bubble bubble-sessions" title="Escuela de Padres">👨‍👩‍👧‍👦<span>Escuela de Padres</span></a>
+            <a href="#evaluacion" class="bubble bubble-eval" title="Evaluación">📊<span>Evaluación</span></a>
+            <a href="#referencias" class="bubble bubble-references" title="Referencias">📖<span>Referencias</span></a>
+            <a href="#contacto" class="bubble bubble-contact" title="Contacto">📞<span>Contacto</span></a>
+            <a href="#ia-asistentes" class="bubble bubble-ia" title="Declaración de IA">🤖<span>Declaración IA</span></a>
+        </nav>
+    </div>
 
     <footer>
         <div class="footer-content">
