@@ -941,6 +941,42 @@ footer {
     color: #1f2937;
 }
 
+.objective-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.objective-card {
+    background: linear-gradient(135deg, #ffffff 0%, #eff6ff 100%);
+    border: 1px solid #dbeafe;
+    border-radius: 14px;
+    padding: 1rem;
+    box-shadow: 0 10px 18px rgba(37, 99, 235, 0.10);
+}
+
+.objective-card h3 {
+    margin-top: 0;
+    color: #1e3a8a;
+}
+
+.objective-card ul {
+    margin: 0;
+    padding-left: 1rem;
+    color: #334155;
+}
+
+.objective-card li + li {
+    margin-top: 0.35rem;
+}
+
+.mermaid-card .mermaid {
+    background: #f8fbff;
+    border-radius: 12px;
+    padding: 0.75rem;
+}
+
 /* Menú flotante de temas */
 .floating-theme-menu {
     position: fixed;
